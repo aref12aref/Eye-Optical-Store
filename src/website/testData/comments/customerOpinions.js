@@ -1,0 +1,80 @@
+export const customerComments = [
+  {
+    name: "customer1 name",
+    gender: "male",
+    comment: "good",
+    rate: "3",
+  },
+  {
+    name: "customer2 name",
+    gender: "male",
+    comment: "not bad",
+    rate: "3",
+  },
+  {
+    name: "customer3 name",
+    gender: "female",
+    comment: "very comfortable",
+    rate: "5",
+  },
+  {
+    name: "customer4 name",
+    gender: "male",
+    comment: "like it",
+    rate: "5",
+  },
+  {
+    name: "customer5 name",
+    gender: "female",
+    comment: "very good",
+    rate: "4",
+  },
+  {
+    name: "customer6 name",
+    gender: "male",
+    comment: "not bad",
+    rate: "3",
+  },
+  {
+    name: "customer7 name",
+    gender: "female",
+    comment: "very comfortable",
+    rate: "5",
+  },
+  {
+    name: "customer8 name",
+    gender: "male",
+    comment: "like it",
+    rate: "5",
+  },
+  {
+    name: "customer9 name",
+    gender: "female",
+    comment: "very good",
+    rate: "4",
+  },
+  {
+    name: "customer10 name",
+    gender: "male",
+    comment: "not bad",
+    rate: "3",
+  },
+  {
+    name: "customer11 name",
+    gender: "female",
+    comment: "very comfortable",
+    rate: "5",
+  },
+  {
+    name: "customer12 name",
+    gender: "male",
+    comment: "like it",
+    rate: "5",
+  },
+  {
+    name: "customer13 name",
+    gender: "female",
+    comment: "very good",
+    rate: "4",
+  },
+];

@@ -1,0 +1,15 @@
+.home-categories-sec-card {
+  flex-basis: 250px;
+  text-align: center;
+  padding: 10px;
+  transition: 0.5s;
+  cursor: pointer;
+}
+.home-categories-sec-card:hover {
+  scale: 1.1;
+}
+
+.home-categories-sec-card-img {
+  width: 100%;
+  height: 200px;
+}

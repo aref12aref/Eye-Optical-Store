@@ -1,0 +1,50 @@
+.oneproduct-head {
+  width: 90%;
+  height: 20%;
+  margin: 20px auto 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px gray solid;
+}
+
+.oneproduct-head-but {
+  width: 80px;
+  height: 40px;
+  border-radius: 20px;
+  font-size: 20px;
+  background-color: rgb(0, 0, 160);
+  color: white;
+  box-shadow: 0 0 10px 1px white inset;
+  transition: 0.5s;
+  border: none;
+}
+
+.oneproduct-head-but:hover {
+  color: rgb(0, 0, 160);
+  background-color: white;
+  border: 2px solid rgb(0, 0, 160);
+  box-shadow: 0 0 10px 1px rgb(0, 0, 160) inset;
+}
+
+.oneproduct-body {
+  display: flex;
+  width: 90%;
+  margin: 20px auto 0 auto;
+}
+
+.oneproduct-body-left {
+  padding-right: 20px;
+  margin-right: 20px;
+  border-right: 1px gray solid;
+}
+
+.oneproduct-body-left-img {
+  width: 300px;
+  height: 300px;
+}
+
+.oneproduct-foot {
+  width: 90%;
+  margin: 20px auto 0 auto;
+}

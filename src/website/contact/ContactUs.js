@@ -24,7 +24,6 @@ export default function ContactUs() {
     title: "select title",
     name: "",
     email: "",
-    subject: "",
     details: "",
   });
 
@@ -43,7 +42,9 @@ export default function ContactUs() {
           <h4 className="contact-title">Send a massage</h4>
           <form className="contact-form" onSubmit={handleSubmit}>
             <div className="contact-form-item">
-              <label className="contact-form-item-label">What Can We Help With?</label>
+              <label className="contact-form-item-label">
+                What Can We Help With?
+              </label>
               <select
                 className="contact-form-input"
                 value={massage.title}
@@ -81,18 +82,6 @@ export default function ContactUs() {
                 value={massage.email}
                 onChange={(e) =>
                   setMassage({ ...massage, email: e.target.value })
-                }
-              />
-            </div>
-
-            <div className="contact-form-item">
-              <label className="contact-form-item-label">Subject</label>
-              <input
-                type="text"
-                className="contact-form-input"
-                value={massage.subject}
-                onChange={(e) =>
-                  setMassage({ ...massage, subject: e.target.value })
                 }
               />
             </div>

@@ -9,18 +9,21 @@
   z-index: 5;
   box-shadow: 1px 1px 10px 5px rgba(0, 0, 95, 0.646);
   background-color: rgba(0, 0, 95, 0.84);
+  border-radius: 15px;
 }
 
 .left-siteTop {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 20%;
+  width: 15%;
 }
 
 .siteTop-logo {
   width: 90px;
   height: 70px;
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
 }
 
 .right-siteTop {

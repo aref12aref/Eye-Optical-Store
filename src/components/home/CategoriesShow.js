@@ -3,7 +3,10 @@ import "./categoriesStyle.css";
 
 export default function CategoriesShow({ image, title }) {
   return (
-    <Card className="home-categories-sec-card" style={{ height: "300px" }}>
+    <Card
+      className="home-categories-sec-card"
+      style={{ height: "250px", borderRadius: "20px" }}
+    >
       <Card.Img
         variant="top"
         src={image}

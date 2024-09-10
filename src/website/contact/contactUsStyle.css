@@ -3,9 +3,6 @@
   flex-direction: column;
   align-items: center;
   width: 100%;
-  background-image: url("../../assets/contact\ us\ background.webp ");
-  background-repeat: no-repeat;
-  background-size: cover;
 }
 
 .contact-title {
@@ -45,7 +42,7 @@
   width: 100%;
 }
 
-.contact-form-item-label{
+.contact-form-item-label {
   font-weight: 700;
   font-size: 17px;
 }

@@ -1,22 +1,22 @@
 export const categoriesData = [
   {
-    name: "Women's prescription glasses",
-    image: require("../../../assets/Women's prescription glasses category.jpg"),
+    name: "Men glasses",
+    image: require("../../../assets/menGlassesCat.jpeg"),
   },
   {
-    name: "Women's sunglasses",
-    image: require("../../../assets/Women's sunglasses category.jpg"),
+    name: "Women glasses",
+    image: require("../../../assets/womenGlassesCat.jpeg"),
   },
   {
-    name: "Men's prescription glasses",
-    image: require("../../../assets/Men's prescription glasses category.avif"),
+    name: "childrens glasses",
+    image: require("../../../assets/childrenGlassesCat.jpeg"),
   },
   {
-    name: "Men's sunglasses",
-    image: require("../../../assets/Men's sunglasses category.jpeg"),
+    name: "goggles",
+    image: require("../../../assets/gogglesCat.jpeg"),
   },
   {
     name: "Contact lenses",
-    image: require("../../../assets/Contact lenses category.jpeg"),
+    image: require("../../../assets/contactlensesCat.jpeg"),
   },
 ];

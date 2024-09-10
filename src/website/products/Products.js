@@ -16,24 +16,12 @@ import { Menu } from "../../context/menuContext.js";
 import SiteSideBar from "../../components/bars/SiteSideBar.js";
 import OneProductPage from "../../components/product/OneProductPage.js";
 
-import Cookie from "cookie-universal";
-
 export default function Products() {
   const windowContext = useContext(WindowSize);
   const windowSize = windowContext.windowSize;
 
   const menu = useContext(Menu);
   const isOpen = menu.isOpen;
-
-  const cookie = Cookie();
-  let orders = cookie.get("cart");
-  const [cart, setCart] = useState(0);
-
-  function handleAddToCart() {
-    orders = orders + 1;
-    cookie.set("cart", orders);
-    setCart((prev) => prev + 1);
-  }
 
   const [search, setSearch] = useState("");
   const [oneProductData, setOneProductData] = useState({
@@ -138,9 +126,7 @@ export default function Products() {
                         <Card.Text>{item.rate}</Card.Text>
                       </div>
 
-                      <Button variant="primary" onClick={handleAddToCart}>
-                        add to cart
-                      </Button>
+                      <Button variant="primary">add to cart</Button>
                     </Card.Body>
                   </Card>
                 )}

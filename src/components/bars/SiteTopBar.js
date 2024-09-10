@@ -5,9 +5,7 @@ import { WindowSize } from "../../context/screenContext.js";
 import { Menu } from "../../context/menuContext.js";
 import { useContext } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faBars, faCartShopping } from "@fortawesome/free-solid-svg-icons";
-
-import Cookie from "cookie-universal";
+import { faBars } from "@fortawesome/free-solid-svg-icons";
 
 export default function SiteTopBar() {
   const windowContext = useContext(WindowSize);
@@ -17,35 +15,19 @@ export default function SiteTopBar() {
   const isOpen = menu.isOpen;
   const setIsOpen = menu.setIsOpen;
 
-  //cookie
-  const cookie = Cookie();
-  const orders = cookie.get("cart");
-
   return (
     <nav className="site-topbar">
       {windowSize > 800 ? (
         <>
           <div className="left-siteTop">
             <img
-              src={require("../../assets/siteLogo.jpg")}
+              src={require("../../assets/siteLogo.png")}
               alt="logo"
               className="siteTop-logo"
             />
             <Link to={"/"} className="siteTop-link">
               Home
             </Link>
-
-            <div className="cart">
-              <FontAwesomeIcon
-                icon={faCartShopping}
-                className="left-siteTop-cart"
-                num={orders}
-              />
-
-              <p className="left-siteTop-p cartStyle" num={orders}>
-                Cart
-              </p>
-            </div>
           </div>
           <div className="right-siteTop">
             <Link to={"/products"} className="siteTop-link">
@@ -65,7 +47,7 @@ export default function SiteTopBar() {
       ) : (
         <div className="topbar-sidebar">
           <img
-            src={require("../../assets/siteLogo.jpg")}
+            src={require("../../assets/siteLogo.png")}
             alt="logo"
             className="siteTop-logo"
           />
@@ -77,18 +59,6 @@ export default function SiteTopBar() {
             }}
             className="topbar-barsIcon"
           />
-
-          <div className="cart">
-            <FontAwesomeIcon
-              icon={faCartShopping}
-              className="left-siteTop-cart"
-              num={orders}
-            />
-
-            <p className="left-siteTop-p cartStyle" num={orders}>
-              Cart
-            </p>
-          </div>
         </div>
       )}
     </nav>

@@ -121,7 +121,9 @@ export default function Home() {
 
     // Create the WhatsApp message
     const message = `Appointment Details:\nName: ${appointmentData.name}\nAge: ${appointmentData.age}\nPhone: ${appointmentData.phoneNumber}\nGender: ${appointmentData.gender}\nAppointment Time: ${appointmentData.time}`;
-    const whatsappLink = `https://wa.me/?text=${encodeURIComponent(message)}`;
+    const whatsappLink = `https://wa.me/+9630930758669/?text=${encodeURIComponent(
+      message
+    )}`;
 
     // Redirect to WhatsApp
     window.open(whatsappLink, "_blank");
